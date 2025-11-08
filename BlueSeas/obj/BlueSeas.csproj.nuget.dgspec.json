@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programas\\BlueSeas\\BlueSeas\\BlueSeas.csproj": {}
+    "C:\\Programas\\BlueSeas\\Projeto-Cadastro-Cliente\\BlueSeas\\BlueSeas.csproj": {}
   },
   "projects": {
-    "C:\\Programas\\BlueSeas\\BlueSeas\\BlueSeas.csproj": {
+    "C:\\Programas\\BlueSeas\\Projeto-Cadastro-Cliente\\BlueSeas\\BlueSeas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programas\\BlueSeas\\BlueSeas\\BlueSeas.csproj",
+        "projectUniqueName": "C:\\Programas\\BlueSeas\\Projeto-Cadastro-Cliente\\BlueSeas\\BlueSeas.csproj",
         "projectName": "BlueSeas",
-        "projectPath": "C:\\Programas\\BlueSeas\\BlueSeas\\BlueSeas.csproj",
+        "projectPath": "C:\\Programas\\BlueSeas\\Projeto-Cadastro-Cliente\\BlueSeas\\BlueSeas.csproj",
         "packagesPath": "C:\\Users\\kayky\\.nuget\\packages\\",
-        "outputPath": "C:\\Programas\\BlueSeas\\BlueSeas\\obj\\",
+        "outputPath": "C:\\Programas\\BlueSeas\\Projeto-Cadastro-Cliente\\BlueSeas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

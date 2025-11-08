@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlueSeas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccb4985f120162a9187b7cf4d9ded79b9fe37df5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlueSeas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlueSeas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
