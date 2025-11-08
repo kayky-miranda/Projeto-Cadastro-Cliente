@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #ffffff;
+    }
+
+   
+
+    /* Blocos coloridos */
+    .color-blocks {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        margin: 30px 0;
+    }
+
+    .color-block {
+        width: 300px;
+        height: 100px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .red {
+        background-color: #e74c3c;
+    }
+
+    .orange {
+        background-color: #f39c12;
+    }
+
+    .yellow {
+        background-color: #f1c40f;
+    }
+
+    .green {
+        background-color: #2ecc71;
+    }
+
+    .blue {
+        background-color: #3498db;
+    }
+
+    /* Texto estilizado */
+    .logo-text {
+        font-family: 'UnifrakturCook', cursive;
+        font-size: 48px;
+        color: #9999;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-text img {
+        height: 40px;
+    }
+
+    .layout {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        width: 80px;
+        background-color: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+        .sidebar img {
+            width: 24px;
+            height: auto;
+            cursor: pointer;
+        }
+
+    .main-content {
+        flex: 1;
+        padding: 30px;
+        background-color: #f8f9fa;
+    }
+
+
+</style>
+<div class="icon-link ma">
+
+</div>
+
+<!-- Blocos coloridos -->
+<div class="color-blocks">
+    <div class="color-block red"></div>
+    <div class="color-block orange"></div>
+    <div class="color-block yellow"></div>
+    <div class="color-block green"></div>
+    <div class="color-block blue"></div>
+</div>
+

@@ -1,0 +1,171 @@
+﻿@model IEnumerable<CadastrosModel>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Clientes - ACME</title>
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        }
+
+        /* Cabeçalho */
+        header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #cfe6f8;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        }
+
+        header img {
+        height: 25px;
+        margin-right: 10px;
+        }
+
+        /* Conteúdo */
+        .content {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        }
+
+        h2 {
+        margin-top: 0;
+        }
+
+        /* Barra de pesquisa */
+        .search {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        }
+
+        .search input {
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+        }
+
+        .search button {
+        padding: 6px 10px;
+        border: 1px solid #ccc;
+        border-left: none;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 0 4px 4px 0;
+        }
+
+        /* Tabela */
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        }
+
+        th {
+        background-color: #f3f3f3;
+        }
+
+        tr:hover {
+        background-color: #f9f9f9;
+        }
+
+        .actions button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        .actions .edit {
+        background-color: #4caf50;
+        color: white;
+        }
+
+        .actions .delete {
+        background-color: #f44336;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+
+    <div class="layout">
+        <!-- Menu lateral -->
+        <aside class="sidebar">
+            <!-- Redireciona para a tela de cadastro de cliente -->
+            <div class="d-flex justify-content-end">
+                <a href="/Clientes/Cadastrar" class="btn btn-primary me-2">Cadastrar</a>
+            </div>
+
+        </aside>
+
+        <!-- Conteúdo -->
+        <main class="content">
+            <h2>Gestão de Clientes</h2>
+            
+            @if (TempData["MensagemSucesso"] != null)
+            {
+                <div class="alert alert-success text-light" role="alert">
+                    @TempData["MensagemSucesso"]
+                </div>
+            }
+
+            @if (TempData["MensagemErro"] != null)
+            {
+                <div class="alert alert-danger text-light" role="alert">
+                    @TempData["MensagemErro"]
+                </div>
+            }
+           
+            <table id="Clientes">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Ultima Atualização</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+                        @foreach(var cliente in Model)
+                        {
+                            <tr>
+
+                                <th scope="row">@cliente.NomeFantasia</th>
+                                <td>@cliente.Email</td>
+                                <td>@cliente.Telefone</td>
+                                <td>@cliente.UltimaAtualizacao</td>
+                                <td>
+                                    <a asp-controller="Clientes" asp-action="Editar" asp-route-id="@cliente.Id" class="btn btn-warning mx-2">Editar</a>
+                                    <a asp-controller="Clientes" asp-action="Excluir" asp-route-id="@cliente.Id" class="btn btn-danger mx-2">Excluir</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

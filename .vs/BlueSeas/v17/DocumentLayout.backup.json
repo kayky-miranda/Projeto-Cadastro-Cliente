@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Programas\\BlueSeas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC185CFA-5562-4A0F-9019-EC7336E46CC2}|BlueSeas\\BlueSeas.csproj|c:\\programas\\blueseas\\blueseas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC185CFA-5562-4A0F-9019-EC7336E46CC2}|BlueSeas\\BlueSeas.csproj|solutionrelative:blueseas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 382,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Programas\\BlueSeas\\BlueSeas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BlueSeas\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Programas\\BlueSeas\\BlueSeas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BlueSeas\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAgwCgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T23:15:43.404Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
